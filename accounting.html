@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accounting-Accounting</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="js/fdb-all.min.js"></script>
+</head>
+<body>
+    <h1>新增支出</h1><br>
+
+    <h4>日期</h4>
+    <input type="date" class="form-control" id="date">
+
+    <h4>類別</h4>
+    <select class="form-control" id="type">
+    <option val="eat">食</option>
+    <option val="wear">衣</option>
+    <option val="live">住</option>
+    <option val="go">行</option>
+    <option val="education">育</option>
+    <option val="play">樂</option>
+    <option val="other">其他</option>
+    </select>
+
+    <h4>項目</h4>
+    <input type="text" class="form-control" id="item">
+
+    <h4>金額</h4>
+    <input type="number" class="form-control" id="cost">
+
+    <button class="btn btn-success" onclick="addInfo()">送出</button>
+    <button class="btn btn-danger" onclick="window.location.href='index.html'">返回</button><br>
+
+    <script type="text/javascript" src="js/accounting.js"></script>
+</body>
+</html>
