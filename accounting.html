@@ -13,10 +13,10 @@
 <body>
     <h1>新增支出</h1><br>
 
-    <h4>日期</h4>
+    <h3>日期</h3>
     <input type="date" class="form-control" id="date">
 
-    <h4>類別</h4>
+    <h3>類別</h3>
     <select class="form-control" id="type">
     <option val="eat">食</option>
     <option val="wear">衣</option>
@@ -27,14 +27,16 @@
     <option val="other">其他</option>
     </select>
 
-    <h4>項目</h4>
+    <h3>項目</h3>
     <input type="text" class="form-control" id="item">
 
-    <h4>金額</h4>
-    <input type="number" class="form-control" id="cost">
-
-    <button class="btn btn-success" onclick="addInfo()">送出</button>
-    <button class="btn btn-danger" onclick="window.location.href='index.html'">返回</button><br>
+    <h3>金額</h3>
+    <input type="number" class="form-control" id="cost"><br>
+    
+    <div class="btn-group" style="width: 100%; ">
+      <button class="btn btn-success" onclick="addInfo()" style="width: 30%; float: none; margin-right: -2px">送出</button>
+      <button class="btn btn-danger" onclick="window.location.href='index.html'" style="width: 30%; float: none; margin-right: -2px">返回</button>
+    </div>
 
     <script type="text/javascript" src="js/accounting.js"></script>
 </body>
