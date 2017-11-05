@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accounting-Lookup</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="js/fdb-all.min.js"></script>
+</head>
+<body>
+    <h3>支出查詢</h3>
+
+    <input type="date" id="fromTime"> - <input type="date" id="toTime">
+    <button class="btn btn-primary little" onclick="search()">查詢</button>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>類別</th>
+        <th>金額</th>  
+        <th>比例</th>    
+      </tr>  
+    </thead>
+    <tbody id="lookupList">
+      <tr>
+        <th>食</th>
+        <th id="eatCost">0</th>
+        <th id="eatPercent">0%</th>
+      </tr>
+      <tr>
+        <th>衣</th>
+        <th id="wearCost">0</th>
+        <th id="wearPercent">0%</th>
+      </tr>
+      <tr>  
+        <th>住</th>
+        <th id="liveCost">0</th>
+        <th id="livePercent">0%</th>
+      </tr>
+      <tr> 
+        <th>行</th>
+        <th id="goCost">0</th>
+        <th id="goPercent">0%</th>
+      </tr>
+      <tr>
+        <th>育</th>
+        <th id="educationCost">0</th>
+        <th id="educationPercent">0%</th>
+      </tr>
+      <tr>  
+        <th>樂</th>
+        <th id="playCost">0</th>
+        <th id="playPercent">0%</th>
+      </tr>
+      <tr>  
+        <th>其他</th> 
+        <th id="otherCost">0</th>
+        <th id="otherPercent">0%</th>
+      </tr>
+      <tr>  
+        <th>總計</th> 
+        <th id="totalCost">0</th>
+        <th>100%</th>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>日期</th>
+        <th>項目</th>  
+        <th>類別</th>  
+        <th>金額</th>      
+      </tr>  
+    </thead>
+    <tbody id="lookupTable">
+
+    </tbody>
+  </table>
+    <button class="btn btn-danger little" onclick="window.location.href='index.html'">返回</button><br>
+    <script type="text/javascript" src="js/lookup.js"></script>
+</body>
+</html>
