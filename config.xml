@@ -1,0 +1,11 @@
+<widget id="com.example.hello" version="0.0.1">
+    <name>記帳</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    
+    <content src="index.html" />
+    <access origin="*" />
+    <icon src="icon.png" />
+</widget>
+
